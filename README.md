@@ -3,7 +3,7 @@
 * [Overview by Jade](https://www.linkedin.com/pulse/refactoring-rewriting-rearchitecting-oh-my-jade-meskill)
 * [Transformation Priority Premise](https://blog.cleancoder.com/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html)
   - not necessarily always correct, but you get the idea.
-* Triple-A
+*  "AAA Testing": Arrange, Act, Assert
 * Ping Pong Pairing
 * Red/Green/Refactoring
 * vscode live share
