@@ -1,7 +1,8 @@
 import {beforeEach, describe, expect, it} from '@jest/globals';
+import {ginRummyIsValidMeld} from "./index";
 
-describe("when testing that jest works", () => {
-   it("should pass", () => {
-      expect(true).toBe(true);
+describe("ginRummyIsValidMeld", () => {
+   it("should exist", () => {
+      expect(ginRummyIsValidMeld).toBeDefined();
    });
 });
