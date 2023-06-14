@@ -9,6 +9,7 @@ const isSameSuit = (x: Array<Card>) => {
   for (let i = 0; i < x.length - 1; i++) {
     if (x[i].suit !== suit) return false;
   }
+  console.log('isSameSuit', x);
   return true;
 };
 const isSequential = (x: Array<Card>) => {
@@ -23,32 +24,29 @@ const isSequential = (x: Array<Card>) => {
 const isSequentialAndSameSuit = (x: Array<Card>) => {
   if (!isSameSuit(x)) return false;
   if(!isSequential(x)) return true;
-  console.log("isSequentialAndSameSuit", x);
   return true;
 };
 const isAllSameRank = (x: Array<Card>) => {
-  console.log('isAllSameRank', x);
   // get the rank of the first card
+  console.log("isAllSameRank", x);
   const rank = x[0].rank;
   // make sure all the ranks are the same
   for (let i = 0; i < x.length - 1; i++) {
     if (x[i].rank !== rank) return false;
   }
-  console.log("yes isAllSameRank", x);
+  console.log("yes all same rank", x);
   return true;
 };
 
 const isAllSameRankAndSuit = (x: Array<Card>) => {
-  if(!isAllSameRank(x)) return false;
-  console.log("isAllSameRankAndSuit", x);
-  if(!isSameSuit(x)) return false;
-  console.log("isAllSameRankAndSuit", x);
-  return true
+  if(isAllSameRank(x)) return true;
+  if(isSameSuit(x)) return true;
+  return false
 };
 
 export const isValidGinRummyMeld = (x: Array<Card>) => {
   if(x.length === 0) return false;
-  if(isSequentialAndSameSuit(x)) return true;
+  if(isAllSameRank(x)) return true;
   if(isAllSameRankAndSuit(x)) return true;
   return false;
 };
