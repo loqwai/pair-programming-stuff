@@ -1,8 +1,8 @@
 import {beforeEach, describe, expect, it} from '@jest/globals';
-import {ginRummyIsValidMeld} from "./index";
+import {isValidGinRummyMeld} from "./index";
 
-describe("ginRummyIsValidMeld", () => {
+describe("isValidGinRummyMeld", () => {
    it("should exist", () => {
-      expect(ginRummyIsValidMeld).toBeDefined();
+      expect(isValidGinRummyMeld).toBeDefined();
    });
 });
