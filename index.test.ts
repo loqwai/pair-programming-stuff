@@ -10,6 +10,13 @@ describe("isValidGinRummyMeld", () => {
       expect(isValidGinRummyMeld([])).toBe(false);
    });
 
+   it("should return false if the array has less than 3 cards", () => {
+      expect(isValidGinRummyMeld([
+         { rank: 2, suit: 'spades' },
+         { rank: 2, suit: 'hearts' },
+      ])).toBe(false);
+   });
+
    describe("when array has 3 cards", () => {
       it("should return true if all cards are the same rank", () => {
          expect(isValidGinRummyMeld([

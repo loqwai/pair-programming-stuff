@@ -9,7 +9,6 @@ const isSameSuit = (x: Array<Card>) => {
   for (let i = 0; i < x.length - 1; i++) {
     if (x[i].suit !== suit) return false;
   }
-  console.log('isSameSuit', x);
   return true;
 };
 const isSequential = (x: Array<Card>) => {
@@ -35,7 +34,7 @@ const isAllSameRank = (x: Array<Card>) => {
   return true;
 };
 export const isValidGinRummyMeld = (x: Array<Card>) => {
-  if(x.length === 0) return false;
+  if(x.length < 3) return false;
   if(isAllSameRank(x)) return true;
   if(isSequentialAndSameSuit(x)) return true;
   return false;
