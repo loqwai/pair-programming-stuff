@@ -12,6 +12,7 @@
 ## The Pair Programming "Game"
 2 "Players" alternate rolls
   - to prevent the roles of "driver" and "navigator" from developing
+  - Also: try to mix up your pairs!
   "Fry" and "Zoidberg"
 1. Fry Makes the simplest test that can possibly fail
   - Usually using "AAA Testing": Arrange, Act, Assert
@@ -32,3 +33,5 @@
 * sequences of three or more cards in the same suit, such as 3♥ 4♥ 5♥ or more
 Les do it!
 * they look like [this](https://www.catsatcards.com/CImages/Final/RummySets.jpg)
+
+<img src="https://www.catsatcards.com/CImages/Final/RummySets.jpg">
