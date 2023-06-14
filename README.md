@@ -10,17 +10,18 @@
 
 ## The Pair Programming "Game"
 2 "Players" alternate rolls
+  - to prevent the roles of "driver" and "navigator" from developing
   "Fry" and "Zoidberg"
 1. Fry Makes the simplest test that can possibly fail
   - Usually using "AAA Testing": Arrange, Act, Assert
 1. Zoidberg makes the test pass in the simplest way possible (by being adversarial)
-  -  a *heuristic* for "Simplest" is the Transformation Priority Premise
+  - a *heuristic* for "Simplest" is the Transformation Priority Premise
+  - possible refactoring, though it should be obvious when to actually do it
 1. Zoidberg makes the next simplest test that can possibly fail
 1. Fry makes the test pass in the simplest way possible (by being adversarial)
 1. Repeat until completed
 
-### Example game using Gin Rummy "Melds"
-
+## Example game using Gin Rummy "Melds"
 
 ### Rules of Gin Rummy
   * who cares? We're dealing with a subset
