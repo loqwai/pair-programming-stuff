@@ -3,6 +3,7 @@
 * [Overview by Jade](https://www.linkedin.com/pulse/refactoring-rewriting-rearchitecting-oh-my-jade-meskill)
 * [Transformation Priority Premise](https://blog.cleancoder.com/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html)
   - not necessarily always correct, but you get the idea.
+  - a corollary to refactoring
 *  "AAA Testing": Arrange, Act, Assert
 * Ping Pong Pairing
 * Red/Green/Refactoring
@@ -30,3 +31,4 @@
 * three or four cards sharing the same rank, e.g. 8♥ 8♦
 * sequences of three or more cards in the same suit, such as 3♥ 4♥ 5♥ or more
 Les do it!
+* they look like [this](https://www.catsatcards.com/CImages/Final/RummySets.jpg)
