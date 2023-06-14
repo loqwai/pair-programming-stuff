@@ -34,5 +34,12 @@ describe("isValidGinRummyMeld", () => {
             { rank: 4, suit: 'spades' },
          ])).toBe(true);
       })
+      it("should return false if the cards are in sequence but NOT the same suit", () => {
+         expect(isValidGinRummyMeld([
+            { rank: 2, suit: 'spades' },
+            { rank: 3, suit: 'hearts' },
+            { rank: 4, suit: 'spades' },
+         ])).toBe(false);
+      })
    })
 });
